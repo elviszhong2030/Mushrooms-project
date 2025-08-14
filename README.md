@@ -26,7 +26,7 @@ Prepare files:
 
 2.Have a labels.txt file with the labels of different types of mushrooms . 
 
-3.Have a pre - trained model file:							 (e.g., I use the resnet18 as my model: resnet18.onnx).
+3.Have a trained model file:							 (e.g., I use the resnet18 as my model: resnet18.onnx).
 
 4.Prepare the python code to identify the pictures
 
