@@ -207,4 +207,4 @@ print(f"Successfully classified image to {opt.out_filename}")
  
  ```
 Here is the video:
-https://drive.google.com/file/d/1pAeUvG8u95YDpnZhptITvdp5xizmRY_4/view?usp=sharing
+https://drive.google.com/file/d/1dhvL2TfFuJ4-5hHW_GkqFGxBEbf1eNMC/view?usp=sharing
