@@ -15,24 +15,26 @@ Finally, text about the class, confidence, and edibility classification is overl
 Running this project
 
 Install required libraries:
-Install jetson_inference and jetson_utils. You can follow the installation instructions specific to your Jetson device (e.g., Jetson Orin Nano).
 
-Ensure you have Python 3 installed.
+1.Install jetson_inference and jetson_utils. You can follow the installation instructions specific to your Jetson device (e.g., Jetson Orin Nano).
+
+2.Ensure you have Python 3 installed.
+
 Prepare files:
 
-Download a dataset for pictures     (My dataset is from kaggle:   https://www.kaggle.com/datasets/iftekhar08/mo-106)
+1.Download a dataset for pictures     (My dataset is from kaggle:   https://www.kaggle.com/datasets/iftekhar08/mo-106)
 
-Have a labels.txt file with the labels of different types of mushrooms . 
+2.Have a labels.txt file with the labels of different types of mushrooms . 
 
-Have a pre - trained model file:							 (e.g., I use the resnet18 as my model: resnet18.onnx).
+3.Have a pre - trained model file:							 (e.g., I use the resnet18 as my model: resnet18.onnx).
 
-Prepare the python code to identify the pictures
+4.Prepare the python code to identify the pictures
 
 Run the script:
 
-Open the terminal.
+1.Open the terminal.
 
-Execute the script with command - line arguments specifying the input image filename and the output image filename,etc. For example: python3 my-recognition.py Entoloma_abortivum_66.jpg Mushrooms1.jpg
+2.Execute the script with command - line arguments specifying the input image filename and the output image filename,etc. For example: python3 my-recognition.py Entoloma_abortivum_66.jpg Mushrooms1.jpg
 
 Here is the code:
 
