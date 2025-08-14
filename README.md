@@ -5,20 +5,33 @@ Mushroom AI
 ![Mushroom]( https://i.imgur.com/lhdedAy.jpeg "Mushroom")<br>
 The Algorithm
 The algorithm relies on Jetson inference’s imageNet and Resnet-18. First, it parses command - line arguments for the image file, output file, model, labels, and blob details. Then, it loads the input image and initializes an imageNet object with the specified model and labels.
+
 The Classify function is used to get the class index and confidence score of the mushroom in the image. The images that are identified are downloaded from kaggle.The class description is retrieved with GetClassDesc.
+
 There are three lists: edible (containing edible mushroom species), non_edible (non - edible species), and toxic (toxic species). The algorithm checks which list the class description belongs to and determines if the mushroom is edible, non - edible, or toxic.
+
 Finally, text about the class, confidence, and edibility classification is overlaid on the image using cudaFont.OverlayText ,and the modified image is saved. This process enables automated mushroom identification and safety classification using pre - trained deep learning models.
+
 Running this project
+
 Install required libraries:
 Install jetson_inference and jetson_utils. You can follow the installation instructions specific to your Jetson device (e.g., Jetson Orin Nano).
+
 Ensure you have Python 3 installed.
 Prepare files:
+
 Download a dataset for pictures     (My dataset is from kaggle:   https://www.kaggle.com/datasets/iftekhar08/mo-106)
+
 Have a labels.txt file with the labels of different types of mushrooms . 
+
 Have a pre - trained model file:							 (e.g., I use the resnet18 as my model: resnet18.onnx).
+
 Prepare the python code to identify the pictures
+
 Run the script:
+
 Open the terminal.
+
 Execute the script with command - line arguments specifying the input image filename and the output image filename,etc. For example: python3 my-recognition.py Entoloma_abortivum_66.jpg Mushrooms1.jpg
 
 Here is the code:
