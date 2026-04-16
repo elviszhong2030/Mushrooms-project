@@ -1,4 +1,4 @@
-# Mushrooms-project
+# MushroomAI-project
 Mushroom AI
 
 Mushroom AI is an AI - powered project that identifies mushrooms and classifies them as edible, non - edible, or toxic, helping users recognize mushrooms safely.
