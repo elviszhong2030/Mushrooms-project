@@ -1,9 +1,11 @@
 # Mushrooms-project
 Mushroom AI
+
 Mushroom AI is an AI - powered project that identifies mushrooms and classifies them as edible, non - edible, or toxic, helping users recognize mushrooms safely.
 
 ![Mushroom]( https://i.imgur.com/lhdedAy.jpeg "Mushroom")<br>
 The Algorithm
+
 The algorithm relies on Jetson inference’s imageNet and Resnet-18. First, it parses command - line arguments for the image file, output file, model, labels, and blob details. Then, it loads the input image and initializes an imageNet object with the specified model and labels.
 
 The Classify function is used to get the class index and confidence score of the mushroom in the image. The images that are identified are downloaded from kaggle.The class description is retrieved with GetClassDesc.
